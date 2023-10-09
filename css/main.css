@@ -36,6 +36,17 @@ img {
     background-color: aquamarine;
 }
 
+a.card-link {
+    display: inline-block;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+    width: 270px;
+}
+
+a.card-link:hover {
+    opacity: 0.8;
+}
+
 .card {
    background-color: white;
    width: 270px;

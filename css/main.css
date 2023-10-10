@@ -70,6 +70,8 @@ a.card-link:hover {
 
 .card__img img {
     border-radius: 10px;
+    height: 200px;
+    width: 270px;
 }
 
 .card__title {

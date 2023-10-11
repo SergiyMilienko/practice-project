@@ -196,6 +196,10 @@ a.card-link:hover {
     background: #11be75;
 }
 
+.card-link--hidden {
+    display: none !important;
+}
+
 .btn-more {
     width: 100%;
     height: 80px;
@@ -533,6 +537,7 @@ a.card-link:hover {
 	align-items: center;
     padding: 0;
     border: none;
+    background-color: transparent;
 }
 
 @media (max-width: 599px) {

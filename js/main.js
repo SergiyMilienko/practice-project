@@ -26,3 +26,23 @@ widgets.forEach(function (widget) {
         }
     })
 })
+
+const checkBoxAny = document.querySelector('#location-05');
+const allLocationCheckBoxes = document.querySelectorAll('.location__checkbox')
+const LocationCheckBoxes = document.querySelectorAll('.location__btn--time')
+
+checkBoxAny.addEventListener('change', function() {
+    if (checkBoxAny.checked) {
+        LocationCheckBoxes.forEach(function (item) {
+            item.checked = false;
+        });
+    }
+})
+
+LocationCheckBoxes.forEach(function (item) {
+    item.addEventListener('change', function() {
+        if (checkBoxAny.checked) {
+            checkBoxAny.checked = false; 
+        }
+    })
+})

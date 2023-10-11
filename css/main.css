@@ -228,6 +228,15 @@ a.card-link:hover {
     line-height: 21px;
     color: #000000;
     margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.widget__title--active::after {
+    transform: rotate(180deg);
+}
+
+.widget__body--hidden {
+    display: none;
 }
 
 .widget__title::after {

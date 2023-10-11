@@ -538,7 +538,7 @@ a.card-link:hover {
 	display: none;
 	position: fixed;
 	z-index: 9;
-	right: 15px;
+	right: 5px;
 	top: 8px;
 	width: 45px;
 	height: 45px;

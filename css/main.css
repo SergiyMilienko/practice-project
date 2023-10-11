@@ -241,8 +241,8 @@ a.card-link:hover {
     appearance: none;
 }
 
-.radio_title {
-    font-weight: 500;
+.radio__title {
+    font-weight: normal;
     font-size: 16px;
     line-height: 1.18;
     color: #000000
@@ -296,4 +296,84 @@ a.card-link:hover {
 
 .radio__real:checked ~ .radio__title {
     font-weight: 500;
+}
+
+.checkbox {
+    display: block;
+    cursor: pointer;
+}
+
+.checkbox + .checkbox {
+    margin-top: 15px;
+}
+
+.checkbox__real {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+    appearance: none;
+}
+
+.checkbox__fake {
+    display: inline-block;
+    border-radius: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid #777777;
+    box-sizing: border-box;
+    position: relative;
+    margin-right: 10px;
+    vertical-align: bottom;
+}
+
+.checkbox__real:checked + .checkbox__fake {
+    background-color: #FFE074;
+
+}
+
+.checkbox__real:checked + .checkbox__fake::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/icons/check.svg");
+    transform: translate(-50%, -50%);
+    background-size: initial;
+    background-position: center;
+}
+
+.checkbox__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    color: #000000;
+}
+
+.widget__show-hidden {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.19;
+    color: #4290c9;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: color 0.2s ease-in;
+    padding: 0;
+}
+
+.widget__show-hidden:hover {
+    color: #006fbe;
+    text-decoration: underline;
+}
+
+.widget__hidden {
+    display: none;
 }

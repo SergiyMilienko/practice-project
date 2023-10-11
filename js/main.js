@@ -46,3 +46,24 @@ LocationCheckBoxes.forEach(function (item) {
         }
     })
 })
+
+const showMoreOptions = document.querySelector('.widget__show-hidden');
+const hiddenCheckBoxes = document.querySelectorAll('.checkbox--hidden');
+
+showMoreOptions.onclick = function (e) {
+    e.preventDefault();
+    if (showMoreOptions.dataset.options == 'hidden') {
+        hiddenCheckBoxes.forEach(function (item) {
+            item.style.display = 'block';
+        });
+        showMoreOptions.innerHTML = "Згорнути"
+        showMoreOptions.dataset.options = 'visible';
+    } else if (showMoreOptions.dataset.options == 'visible') {
+        hiddenCheckBoxes.forEach(function (item) {
+            item.style.display = 'none';
+        });
+        showMoreOptions.innerHTML = "Показати ще"
+        showMoreOptions.dataset.options = 'hidden';
+    }
+
+}

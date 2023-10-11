@@ -392,6 +392,10 @@ a.card-link:hover {
     vertical-align: bottom;
 }
 
+.checkbox--hidden {
+    display: none;
+}
+
 .checkbox__real:checked + .checkbox__fake {
     background-color: #FFE074;
 
